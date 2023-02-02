@@ -38,6 +38,7 @@ class BlogPost(FixModels) :
     description = models.CharField(max_length=128, default="")
     content = models.TextField()
     viewed = models.IntegerField(default=0, editable=False) #editable=False ise databasede gözükmez. Yani kullanici degistiremez. Bizim yazdigimiz fonksiyona göre arka planda kendini yenileyecek.
+    image = models.ImageField(null=True, blank=True, upload_to='images/')
 
     def __str__(self) :
         return f'{self.author} - {self.title}'
