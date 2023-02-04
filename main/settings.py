@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #Third party apps ;
     'rest_framework',
     'rest_framework.authtoken',
+    'dj_rest_auth',
     #my apps;
     'blogapp',
     'blogapp_user'

@@ -19,7 +19,8 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/',include('blogapp.urls')),
-    # path('auth/',include('blogapp_user.urls')),
+    path('auth/',include('blogapp_user.urls')),
+    # path('dj-rest-auth/', include('dj_rest_auth.urls'))
 ]
 
 # MEDIA & STATIC settings for urls.py: ###resim eklemek icin yapmam gerekenler
